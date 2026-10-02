@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ShopNest | Product Details</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold"
+           href="index.html">
+
+            Shop<span>Nest</span>
+
+        </a>
+
+
+        <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse"
+             id="mainNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="products.html">
+                        Products
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- Breadcrumb -->
+<section class="page-header">
+
+    <div class="container">
+
+        <nav aria-label="breadcrumb">
+
+            <ol class="breadcrumb">
+
+                <li class="breadcrumb-item">
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="breadcrumb-item">
+                    <a href="products.html">
+                        Products
+                    </a>
+                </li>
+
+                <li class="breadcrumb-item active">
+                    Product Detail
+                </li>
+
+            </ol>
+
+        </nav>
+
+        <h1>
+            Product Detail
+        </h1>
+
+    </div>
+
+</section>
+
+
+<!-- Product Detail -->
+<section class="py-5">
+
+    <div class="container"
+         id="productDetail">
+
+    </div>
+
+</section>
+
+
+<!-- Related Products -->
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <h2 class="mb-4">
+            Related Products
+        </h2>
+
+        <div class="row g-4"
+             id="relatedProducts">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Image Zoom Modal -->
+<div class="modal fade"
+     id="imageZoomModal"
+     tabindex="-1">
+
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+
+        <div class="modal-content bg-dark">
+
+            <button type="button"
+                    class="btn-close btn-close-white ms-auto m-2"
+                    data-bs-dismiss="modal">
+            </button>
+
+            <img id="zoomImage"
+                 class="zoom-image"
+                 src=""
+                 alt="Zoomed product">
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="container py-4 text-center">
+
+        <h5>
+            ShopNest
+        </h5>
+
+        <p class="mb-0">
+            © 2026 ShopNest
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+<script>
+    initProductDetail();
+</script>
+
+</body>
+</html>
